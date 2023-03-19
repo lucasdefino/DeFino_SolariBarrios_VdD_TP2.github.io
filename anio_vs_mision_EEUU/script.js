@@ -8,20 +8,24 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         {
           x: 'anio_mision',
           y: 'mision_hs',
-          r: 'eva_mision_hs'
+          r: 'eva_mision_hs',
+          fill :'eva_mision_hs',
+          opacity : 0.8,
         },
       ),
     ],
     x: {
+      grid: true,
       tickFormat: 'd',
     },
     y: {
       nice: true,
       grid: true,
     },
-    //r: {range: [0,15]},
+    r: {range: [0,10]},
 
     color: {
+      scheme : 'blues',
       legend: true,
     }
     

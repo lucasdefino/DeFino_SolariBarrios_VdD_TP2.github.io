@@ -1,6 +1,5 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
   console.log(data)
-
   let chart = Plot.plot({
     marks: [
       Plot.barX(data,

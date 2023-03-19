@@ -4,10 +4,11 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   let chart = Plot.plot({
 
     marks: [
-      Plot.tickX(data,
+      Plot.dot(data,
         {
         y: 'nacionalidad',
         x: 'eva_mision_hs',
+        symbol: 'square'
         }),
     ],
     x: { grid: true, line: true, zero: true, nice: true, },

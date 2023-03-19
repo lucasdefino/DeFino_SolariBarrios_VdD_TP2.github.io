@@ -4,6 +4,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   let chart = 
   Plot.plot({
     width: 800,
+    marginLeft: 60,
     facet: {
       data: data,
       x: 'genero',
@@ -28,9 +29,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       })
       */
     ],
+
+
     x: {grid: true, line: true, zero: true, nice: true, }, 
     y: {grid: true, line: true, zero: true, nice: true, },
-    color: {legend: true, scheme: 'dark2'}    
+    color: {legend: true, scheme: 'dark2'},
+
+
+
   })
   d3.select('#chart').append(() => chart)
 })

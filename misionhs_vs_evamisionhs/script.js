@@ -13,7 +13,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         {
         y: 'mision_hs',
         x: 'eva_mision_hs', 
-        r: 'mision_hs',
+        //r: 'mision_hs',
         fill: 'nacionalidad',
       }),
 
@@ -30,15 +30,10 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       },
     }), */
 
-    style:{
-      backgroundColor: 'black',
-      color: 'white',
-      fontFamily: 'monospace',
-    },
     x: { grid: true, line: true, zero: true, nice: true, },
     y: { grid: true, line: true, zero: true, nice: true, },
 
-    r: { range: [0, 8] },
+    //r: { range: [0, 8] },
     
     color: {
       scheme: 'set1',
