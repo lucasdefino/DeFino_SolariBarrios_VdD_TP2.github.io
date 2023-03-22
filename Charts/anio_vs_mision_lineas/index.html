@@ -12,12 +12,38 @@
       #chart svg{
         max-width: initial;
       }
+      #chartylegend{
+        display: flex;
+      }
     </style>
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    
+    <h1>Promedio Anual de China, Rusia y Estados Unidos</h1>
 
-    <div id="chart"></div>
+    <p>
+       Para los tres países con más misiones calculamos los promedios anuales de las horas de misión.
+    </p>
+
+
+    <div id="chartylegend">
+    
+    
+      <div id="chart"></div>
+    
+      <div>
+
+        <br>
+        <div><div class='box darkcyan'></div> = Estados Unidos</div>
+        <br>
+        <div><div class='box green'></div> = China</div>
+        <br>
+        <div><div class='box brown'></div> = Rusia</div>
+
+      </div>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
