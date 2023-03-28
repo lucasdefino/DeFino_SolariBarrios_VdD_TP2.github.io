@@ -3,18 +3,40 @@
   height: 20px;
   width: 20px;
   margin-bottom: 15px;
-  border: 1px solid black;
+  border: 1px solid grey;
   clear: both;
 }
 
 .darkcyan {
-  background-color: darkcyan;
+  background-color: midnightblue;
 }
 
 .green {
-  background-color: green;
+  background-color: darkgreen;
 }
 
 .brown {
-  background-color: brown;
+  background-color: maroon;
 }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+svg {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 11px;
+}
+
+.leyendaeeuu {
+  color : midnightblue;
+}
+
+.leyendachina {
+  color : darkgreen;
+}
+
+.leyendarusia {
+  color : maroon;
+}
+
