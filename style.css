@@ -5,9 +5,4 @@ body {
 svg {
   font-family: 'DM Serif Display';
   font-size: 11px;
-  color: #005000;
-}
-
-#chart svg {
-  background-color: transparent !important;
 }

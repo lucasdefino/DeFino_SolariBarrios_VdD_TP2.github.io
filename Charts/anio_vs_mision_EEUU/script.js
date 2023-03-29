@@ -23,12 +23,16 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       grid: true,
     },
     r: {range: [0,10]},
-
     color: {
-      scheme : 'blues',
+      scheme : 'greens',
       legend: true,
+    },
+    style: {
+      backgroundColor: '#edf3ed',
+    },
+    legend: {
+      backgroundColor: '#edf3ed',
     }
-    
   })
   d3.select('#chart').append(() => chart)
 })

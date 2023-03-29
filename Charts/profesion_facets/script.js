@@ -24,6 +24,10 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       x: 'ocupacion',
     },
     x: { ticks: 3 },
+    color: {range: ['#cc6600','#006666','#005000',]},
+    style: {
+      backgroundColor: '#edf3ed',
+    },
   })
   d3.select('#chart').append(() => chart)
 })

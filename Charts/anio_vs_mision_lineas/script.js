@@ -52,7 +52,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           x: 'anio_mision', 
           y: d => (d.max + d.min) / 2,
           sort: 'anio_mision',
-          stroke: 'midnightblue',
+          stroke: '#005000',
           strokeWidth: 3,
         }),
       Plot.lineY(datachinaminmax,
@@ -60,7 +60,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           x: 'anio_mision', 
           y: d => (d.max + d.min) / 2,
           sort: 'anio_mision',
-          stroke: 'darkgreen',
+          stroke: '#006666',
           strokeWidth: 3,
         }),
       Plot.lineY(dataussrminmax,
@@ -68,7 +68,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           x: 'anio_mision', 
           y: d => (d.max + d.min) / 2,
           sort: 'anio_mision',
-          stroke: 'maroon',
+          stroke: '#cc6600',
           strokeWidth: 3,
         }),
     ],
@@ -80,6 +80,9 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       nice: true,
       grid: true,
       label: '↑ promedio_mision_hs'
+    },
+    style: {
+      backgroundColor: '#edf3ed',
     },
   })
   d3.select('#chart').append(() => chart)

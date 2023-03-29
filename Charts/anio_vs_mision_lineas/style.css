@@ -1,42 +1,46 @@
-.box {
+
+.dot {
   float: left;
   height: 20px;
   width: 20px;
-  margin-bottom: 15px;
-  border: 1px solid grey;
-  clear: both;
-}
+  border-radius: 50%;
+  display: inline-block;
+} 
 
 .darkcyan {
-  background-color: midnightblue;
+  background-color: #005000;
 }
 
 .green {
-  background-color: darkgreen;
+  background-color: #006666;
 }
 
 .brown {
-  background-color: maroon;
+  background-color: #cc6600;
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'DM Serif Display';
 }
 
 svg {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'DM Serif Display';
   font-size: 11px;
+  color: #005000;
 }
 
 .leyendaeeuu {
-  color : midnightblue;
+  color : #005000;
+  font-size: 14px;
 }
 
 .leyendachina {
-  color : darkgreen;
+  color : #006666;
+  font-size: 14px;
 }
 
 .leyendarusia {
-  color : maroon;
+  color : #cc6600;
+  font-size: 14px;
 }
 

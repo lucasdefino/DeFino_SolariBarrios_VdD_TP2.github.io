@@ -1,8 +1,9 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'DM Serif Display';
 }
 
 svg {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'DM Serif Display';
   font-size: 11px;
+  color: #005000;
 }

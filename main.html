@@ -6,17 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datos de los Astronautas</title>
     <style>
-      #chart{
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');      #chart{
         overflow-y:auto;
       }
       #chart svg{
         max-width: initial;
       }
-      
+      h1{
+        color: #005000;
+        display: flex;
+        justify-content: center;        
+      }
+      h2{
+        color: #005000;
+        display: flex;
+        justify-content: center;
+      }
+      h3{
+        color: #005000;
+        display: flex;
+        justify-content: center;
+      }
+      body{
+        background-color: #edf3ed;
+      }
+      p{
+        color: #005000;
+        display: flex;
+        justify-content: center;
+      }
     </style>
+  <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
+    <h1>Titulo</h1>
+    <br>
 
 
+
+    <h2>Misiones de Estados Unidos por año</h2>
+    <h3>
+      Cantidad de horas mision por año codificada en una escala de azules que representa las horas eva
+    </h3>
+    <iframe src="Charts/anio_vs_mision_EEUU/index.html" width="100%" height="500" frameborder="0"></iframe>
+    
+
+    <h2>Promedio Anual de China, Rusia y Estados Unidos</h2>
+    <h3>
+       Para los tres países con más misiones calculamos los promedios anuales de las horas de misión
+    </h3>
+    <iframe src="Charts/anio_vs_mision_lineas/index.html" width="100%" height="450" frameborder="0"></iframe>
+    
+
+    <h2>Piramide poblacional</h2>
+    <h3>
+      Horas de mision segmentadas por edad y genero, representadas en un estilo de piramide poblacional
+    </h3>
+    <iframe src="Charts/piramide_poblacional/index.html" width="100%" height="700" frameborder="0"></iframe>
+    
+
+    <h2>Horas de misión por profesion</h2>
+    <h3>
+      Relacion horas de mision y horas eva, seccionadas por profesión
+    </h3>
+    <iframe src="Charts/profesion_facets/index.html" width="100%" height="250" frameborder="0"></iframe>
+    
+   <p>Datos extraídos de  <a href="https://github.com/visualizacion-de-datos-utdt/vd_astronautas"> astronautas.csv</a>, recopilados por la NASA, Roscosmos y otras entidades, desde enero de 2010 hasta diciembre de 2019.</p>
 </body>
 </html>
