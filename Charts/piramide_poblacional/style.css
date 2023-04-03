@@ -1,9 +1,29 @@
 body {
   font-family: 'DM Serif Display';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 svg {
   font-family: 'DM Serif Display';
   font-size: 11px;
   color: #005000;
+}
+
+span + span {
+  margin-left: 220px;
+}
+
+#fem{
+  margin-left: 25px;
+  color: #005000;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+#masc{
+  font-weight: bolder;
+  color: #cc6600;
+  font-size: 18px;
 }

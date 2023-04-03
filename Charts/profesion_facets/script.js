@@ -4,6 +4,15 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   let datafilter = data.filter(d => d.ocupacion == 'comandante' || d.ocupacion == 'especialista aeroespacial' || d.ocupacion == 'ingeniero aeroespacial',)
 
   chart = Plot.plot({
+    height:1000,
+    width:1000,
+    marginBottom:30,
+    marginLeft:70,
+    facet: {
+      data: datafilter,
+      x: 'ocupacion',
+      label:"",
+    },
     marks: [
       Plot.dot(datafilter, {
         y: 'mision_hs',
@@ -19,11 +28,16 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     zero: true,
     width: 800,
     height: 200,
-    facet: {
-      data: datafilter,
-      x: 'ocupacion',
+    x: {
+      labelAnchor: "center",
+      label:"Horas de mision EVA →"
     },
-    x: { ticks: 3 },
+    y:{
+      anchor: "left",
+      label: "Horas de mision →",
+      labelAnchor: "center",
+      labelOffset: 60,
+    },
     color: {range: ['#cc6600','#006666','#005000',]},
     style: {
       backgroundColor: '#edf3ed',

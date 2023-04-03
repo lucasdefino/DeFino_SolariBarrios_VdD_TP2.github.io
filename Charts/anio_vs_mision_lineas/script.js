@@ -48,7 +48,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         },
       ),
       Plot.lineY(dataeeuuminmax,
-        { 
+        {
           x: 'anio_mision', 
           y: d => (d.max + d.min) / 2,
           sort: 'anio_mision',
@@ -56,7 +56,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           strokeWidth: 3,
         }),
       Plot.lineY(datachinaminmax,
-        { 
+        {
           x: 'anio_mision', 
           y: d => (d.max + d.min) / 2,
           sort: 'anio_mision',
@@ -64,22 +64,47 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           strokeWidth: 3,
         }),
       Plot.lineY(dataussrminmax,
-        { 
+        {
           x: 'anio_mision', 
           y: d => (d.max + d.min) / 2,
           sort: 'anio_mision',
           stroke: '#cc6600',
           strokeWidth: 3,
         }),
+        Plot.dot(dataeeuuminmax,
+          {
+            x: 'anio_mision', 
+            y: d => (d.max + d.min) / 2,
+            sort: 'anio_mision',
+            stroke: '#005000',
+            strokeWidth: 3,
+          }),
+        Plot.dot(datachinaminmax,
+          {
+            x: 'anio_mision', 
+            y: d => (d.max + d.min) / 2,
+            sort: 'anio_mision',
+            stroke: '#006666',
+            strokeWidth: 3,
+          }),
+        Plot.dot(dataussrminmax,
+          {
+            x: 'anio_mision', 
+            y: d => (d.max + d.min) / 2,
+            sort: 'anio_mision',
+            stroke: '#cc6600',
+            strokeWidth: 3,
+          }),
     ],
     x: {
       grid: true,
       tickFormat: 'd',
+      label: 'Años  →'
     },
     y: {
       nice: true,
       grid: true,
-      label: '↑ promedio_mision_hs'
+      label: '↑ Promedio horas de mision'
     },
     style: {
       backgroundColor: '#edf3ed',

@@ -15,10 +15,12 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       ),
     ],
     x: {
+      label: "Años  →",
       grid: true,
       tickFormat: 'd',
     },
     y: {
+      label: "↑ Horas de mision",
       nice: true,
       grid: true,
     },
@@ -26,6 +28,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     color: {
       scheme : 'greens',
       legend: true,
+      label:"Horas de mision EVA"
     },
     style: {
       backgroundColor: '#edf3ed',
