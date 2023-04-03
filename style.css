@@ -1,5 +1,6 @@
 body {
   font-family: 'DM Serif Display';
+  background-color: #edf3ed;
 }
 
 svg {
@@ -7,4 +8,55 @@ svg {
   font-size: 11px;
 }
 
-#more {display: none;}
+#chart svg{
+  max-width: initial;
+}
+h1{
+  color: #005000;
+  display: flex;
+  justify-content: center;        
+}
+h2{
+  font-weight: bolder;
+  color: #005000;
+  display: flex;
+  justify-content: center;
+}
+h3{
+  color: #005000;
+  display: flex;
+  justify-content: center;
+  font-weight:lighter;
+}
+p{
+  color: #005000;
+  display: flex;
+  justify-content: center;
+}
+
+#more {
+  display: none;
+  position: relative;
+  top: -30px;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+#myBtn{
+  position: relative;
+  top: -40px;
+  left: 350px;
+  padding: 10px 10px;  
+  border-color: #005000;
+  border-radius: 15px;
+  background-color: #005000;
+  color: white;
+  transition: 0.6s ease;
+}
+
+#myBtn:hover{
+  cursor: pointer;
+  opacity: 70%;
+  background-color: #005000;
+  color:white
+}
