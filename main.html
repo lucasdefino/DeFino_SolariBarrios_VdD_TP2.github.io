@@ -14,18 +14,17 @@
   <link rel="stylesheet" href="style.css" />
 
   <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
+    function readMore(chart) {
+      let moreText = document.querySelector(`.card[data-chart="${chart}"] .more`); 
+      let btnText = document.querySelector(`.card[data-chart="${chart}"] .myBtn`);
 
-      if (moreText.style.display == "block") {
-        btnText.innerHTML = "Leer más";
+      if (btnText.textContent == "Ocultar") {
+        btnText.textContent = "Leer más";
         moreText.style.display = "none";
-      } else {
-        btnText.innerHTML = "Ocultar";
+    } else {
+        btnText.textContent = "Ocultar"; 
         moreText.style.display = "block";
-      }
+    }
     }
   </script>
   
@@ -36,51 +35,64 @@
     <br>
 
 
+    
+    <div class="card" data-chart="chart1" >
 
-    <h2>Misiones de Estados Unidos por año</h2>
-    <h3>
-      Horas por mision codificadas en una escala de verdes representando la actividad extravehicular
-    </h3>
-    <iframe src="Charts/anio_vs_mision_EEUU/index.html" width="100%" height="500" frameborder="0"></iframe>
-    
-    <button onclick="myFunction()" id="myBtn">Leer más</button>
-    <span id="more">Para este primer gráfico decidimos exponer los datos del país con mayor cantidad de misiones en los últimos 10 años. Cada una se ve representada por un punto, cuya posición corresponde a la cantidad de horas empleadas. Además, utilizamos el recurso del radio y la escala de verdes para denotar la cantidad de horas de actividad extravehicular. Así conseguimos un gráfico que codifica tres variables armoniosamente.</span>
-    
+      <h2>Misiones de Estados Unidos por año</h2>
+      <h3>
+        Horas por mision codificadas en una escala de verdes representando la actividad extravehicular
+      </h3>
+      <iframe src="Charts/anio_vs_mision_EEUU/index.html" width="100%" height="500" frameborder="0"></iframe>
+      
+      <button onclick="readMore('chart1')" class="myBtn">Leer más</button>
+      <span class="more">Para este primer gráfico decidimos exponer los datos del país con mayor cantidad de misiones en los últimos 10 años. Cada una se ve representada por un punto, cuya posición corresponde a la cantidad de horas empleadas. Además, utilizamos el recurso del radio y la escala de verdes para denotar la cantidad de horas de actividad extravehicular. Así conseguimos un gráfico que codifica tres variables armoniosamente.</span>
+      
+    </div>
+
     <br>
 
-    <h2>China, Rusia y Estados Unidos</h2>
-    <h3>
-       Promedio anual de las horas de mision para los tres paises con mayor actividad
-    </h3>
-    <iframe src="Charts/anio_vs_mision_lineas/index.html" width="100%" height="450" frameborder="0"></iframe>
-  
-    <button onclick="myFunction()" id="myBtn">Leer más</button>
-    <span id="more">Comparamos ahora a los promedios anuales de Estados Unidos con Rusia, un cercano segundo, y China, que si bien es un alejado tercero, sirve para demostrar la superioridad de los primeros dos. Elegimos un gráfico de líneas para plasmar la evolución a través de los años y utilizamos puntos para dejar constancia de la existencia de datos. Puede notarse que China no posee misiones en 2014 y 2015, por lo cuál el uso únicamente de líneas estaría brindando información no certera.</span>
-  
+    <div class="card" data-chart="chart2">
+
+      <h2>China, Rusia y Estados Unidos</h2>
+      <h3>
+        Promedio anual de las horas de mision para los tres paises con mayor actividad
+      </h3>
+      <iframe src="Charts/anio_vs_mision_lineas/index.html" width="100%" height="450" frameborder="0"></iframe>
+    
+      <button onclick="readMore('chart2')" class="myBtn">Leer más</button>
+      <span class="more">Comparamos ahora a los promedios anuales de Estados Unidos con Rusia, un cercano segundo, y China, que si bien es un alejado tercero, sirve para demostrar la superioridad de los primeros dos. Elegimos un gráfico de líneas para plasmar la evolución a través de los años y utilizamos puntos para dejar constancia de la existencia de datos. Puede notarse que China no posee misiones en 2014 y 2015, por lo cuál el uso únicamente de líneas estaría brindando información no certera.</span>
+    
+    </div>
+    
     <br>
  
+    <div class="card" data-chart="chart3">
 
-    <h2>Horas de misión por profesion</h2>
-    <h3>
-      Relacion entre las horas de mision intra y extravehicular para las tres ocupaciones mas frecuentes
-    </h3>
-    <iframe src="Charts/profesion_facets/index.html" width="100%" height="300" frameborder="0"></iframe>
-  
-    <button onclick="myFunction()" id="myBtn">Leer más</button>
-    <span id="more">Pasando a un aspecto más humano de nuestro conjunto de datos, observamos la dispersión de las horas trabajadas según las ocupaciones más frecuentes. Utilizando facets podemos generar contraste bajo una misma escala, con el beneficio de que los puntos no se superpongan y así evitando ruido innecesario.</span>
-  
+      <h2>Horas de misión por profesion</h2>
+      <h3>
+        Relacion entre las horas de mision intra y extravehicular para las tres ocupaciones mas frecuentes
+      </h3>
+      <iframe src="Charts/profesion_facets/index.html" width="100%" height="300" frameborder="0"></iframe>
+    
+      <button onclick="readMore('chart3')" class="myBtn">Leer más</button>
+      <span class="more">Pasando a un aspecto más humano de nuestro conjunto de datos, observamos la dispersión de las horas trabajadas según las ocupaciones más frecuentes. Utilizando facets podemos generar contraste bajo una misma escala, con el beneficio de que los puntos no se superpongan y así evitando ruido innecesario.</span>
+    
+    </div>
+    
     <br>
 
+    <div class="card" data-chart="chart4">
 
-    <h2>Piramide poblacional</h2>
-    <h3>
-      Horas de mision segmentadas por edad y genero
-    </h3>
-    <iframe src="Charts/piramide_poblacional/index.html" width="100%" height="700" frameborder="0"></iframe>
+      <h2>Piramide poblacional</h2>
+      <h3>
+        Horas de mision segmentadas por edad y genero
+      </h3>
+      <iframe src="Charts/piramide_poblacional/index.html" width="100%" height="700" frameborder="0"></iframe>
 
-    <button onclick="myFunction()" id="myBtn">Leer más</button>
-    <span id="more">Para cerrar este conjunto de visualizaciones elegimos un gráfico un tanto atípico pero que toca un tema corriente. Hacia la izquierda pueden encontrarse los datos de las mujeres según la cantidad de horas de misión, ordenadas por edad. En contraste con la mitad derecha, puede notarse un vacío que deja en claro la falta de mujeres en el rubro.</span>
+      <button onclick="readMore('chart4')" class="myBtn">Leer más</button>
+      <span class="more">Para cerrar este conjunto de visualizaciones elegimos un gráfico un tanto atípico pero que toca un tema corriente. Hacia la izquierda pueden encontrarse los datos de las mujeres según la cantidad de horas de misión, ordenadas por edad. En contraste con la mitad derecha, puede notarse un vacío que deja en claro la falta de mujeres en el rubro.</span>
 
+    </div>
     
    <p>Datos extraídos de <a href="https://github.com/visualizacion-de-datos-utdt/vd_astronautas" target="_blank"> astronautas.csv</a>, recopilados por la NASA, Roscosmos y otras entidades, desde enero de 2010 hasta diciembre de 2019.</p>
 </body>

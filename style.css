@@ -34,7 +34,8 @@ p{
   justify-content: center;
 }
 
-#more {
+.more {
+  color: #005000;
   display: none;
   position: relative;
   top: -30px;
@@ -42,7 +43,7 @@ p{
   padding-right: 350px;
 }
 
-#myBtn{
+.myBtn{
   position: relative;
   top: -40px;
   left: 350px;
@@ -54,7 +55,7 @@ p{
   transition: 0.6s ease;
 }
 
-#myBtn:hover{
+.myBtn:hover{
   cursor: pointer;
   opacity: 70%;
   background-color: #005000;
