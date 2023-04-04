@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datos de los Astronautas</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');      #chart{
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');      
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+      #chart{
         overflow-y:auto;
       }
-</style>
+      
     </style>
   <link rel="stylesheet" href="style.css" />
 
@@ -34,16 +36,21 @@
     <h1>Estadísticas Espaciales</h1>
     <br>
 
+    <div>
+      <a href="#chart1">chart1</a>
+    </div>
+
+
 
     
-    <div class="card" data-chart="chart1" >
+    <div class="card" data-chart="chart1" id="chart1">
 
       <h2>Misiones de Estados Unidos por año</h2>
       <h3>
         Horas por mision codificadas en una escala de verdes representando la actividad extravehicular
       </h3>
       <iframe src="Charts/anio_vs_mision_EEUU/index.html" width="100%" height="500" frameborder="0"></iframe>
-      
+
       <button onclick="readMore('chart1')" class="myBtn">Leer más</button>
       <span class="more">Para este primer gráfico decidimos exponer los datos del país con mayor cantidad de misiones en los últimos 10 años. Cada una se ve representada por un punto, cuya posición corresponde a la cantidad de horas empleadas. Además, utilizamos el recurso del radio y la escala de verdes para denotar la cantidad de horas de actividad extravehicular. Así conseguimos un gráfico que codifica tres variables armoniosamente.</span>
       
@@ -94,7 +101,8 @@
 
     </div>
     
-   <p>Datos extraídos de <a href="https://github.com/visualizacion-de-datos-utdt/vd_astronautas" target="_blank"> astronautas.csv</a>, recopilados por la NASA, Roscosmos y otras entidades, desde enero de 2010 hasta diciembre de 2019.</p>
+    <p>Autores: Lucas De Fino y Pilar Solari Barrios</p>
+    <p>Datos extraídos de <a href="https://github.com/visualizacion-de-datos-utdt/vd_astronautas" target="_blank"> astronautas.csv</a>, recopilados por la NASA, Roscosmos y otras entidades, desde enero de 2010 hasta diciembre de 2019.</p>
 </body>
 </html>
 
