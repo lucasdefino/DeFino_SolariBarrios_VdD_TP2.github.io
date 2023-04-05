@@ -11,10 +11,3 @@ svg {
 #chart svg {
   background-color: transparent !important;
 }
-
-#label {
-  font-family: 'DM Serif Display';
-  font-weight: bold;
-  font-size: 15px;
-  color: #005000;
-}

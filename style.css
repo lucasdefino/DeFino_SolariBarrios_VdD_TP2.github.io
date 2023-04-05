@@ -35,20 +35,44 @@ p{
   justify-content: center;
 }
 
+.boton{
+  text-align: center;
+  padding: 10px;
+  margin: 2%;
+  border-radius: 25px;
+  background-color: #4b844b;
+  color: white;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.boton:hover{
+  opacity: 70%;
+  background-color: #4b844b;
+  color:white;
+}
+
+#botones{
+  display: flex;
+  justify-content: center;
+}
+
+#leermas{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .more {
   font-family: "PT Serif";
   color: #005000;
   display: none;
-  position: relative;
-  top: -30px;
   padding-left: 300px;
   padding-right: 300px;
 }
 
+
 .myBtn{
-  position: relative;
-  top: -30px;
-  left: 300px;
   padding: 10px 10px;  
   border-color: #005000;
   border-radius: 25px;
